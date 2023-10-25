@@ -1,0 +1,19 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 90px;
+    color: sandybrown;
+}
+p{
+    font-size: 50px;
+    color: cornflowerblue;
+}
+#print{
+    background-color: crimson;
+    font-size: 50px;
+    border: none;
+    padding: 20px 50px;
+    cursor: pointer;
+}

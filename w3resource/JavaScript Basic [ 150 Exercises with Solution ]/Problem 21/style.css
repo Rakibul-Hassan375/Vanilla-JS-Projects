@@ -1,0 +1,20 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+    color: brown;
+}
+.lbl{
+    font-size: 50px;
+    color: chocolate;
+}
+#value{
+    font-size: 50px;
+    color: springgreen;
+}
+p{
+    font-size: 50px;
+    color: darkmagenta;
+}

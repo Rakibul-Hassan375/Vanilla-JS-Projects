@@ -1,0 +1,27 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 90px;
+    color: crimson;
+}
+p{
+    font-size: 80px;
+    color: darkslateblue;
+}
+.lbl{
+    font-size: 50px;
+    color: coral;
+}
+#inpt{
+    font-size: 50px;
+    width: 25%;
+    text-align: center;
+    color: deeppink;
+    border: 2px black solid;
+}
+#result{
+    font-size: 70px;
+    color: orangered;
+}

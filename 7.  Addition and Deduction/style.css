@@ -1,0 +1,41 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 90px;
+}
+#number_one{
+    font-size: 50px;
+    background-color: rgb(119, 172, 221);
+    width: 5%;
+    border: 0;
+    text-align: center;
+}
+#type{
+    font-size: 50px;
+    background-color: rgb(191, 226, 204);
+    width: 11%;
+    text-align: center;
+}
+#number_two{
+    font-size: 50px;
+    background-color: rgb(190, 130, 158);
+    width: 5%;
+    border: 0;
+    text-align: center;
+}
+#calculate{
+    font-size: 50px;
+    background-color: rgb(190, 130, 158);
+    width: 5%;
+    border: 0;
+}
+#result{
+    margin: auto;
+    font-size: 90px;
+    width: 5%;
+    border: 0;
+    margin-top: 50px;
+    padding: 50px 100px 0px 0px;
+}

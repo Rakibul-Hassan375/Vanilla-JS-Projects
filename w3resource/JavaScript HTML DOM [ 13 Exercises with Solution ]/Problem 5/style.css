@@ -1,0 +1,30 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 90px;
+    color: brown;
+}
+table{
+    width: 60%;
+    margin: auto;
+    border-collapse: collapse;
+}
+th{
+    text-align: left;
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+td{
+    text-align: left;
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+#btn{
+    color: darkgoldenrod;
+    font-size: 50px;
+}

@@ -1,0 +1,20 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 90px;
+    color: springgreen;
+}
+h3{
+    font-size: 50px;
+    color: teal;
+}
+p{
+    font-size: 50px;
+    color: seagreen;
+}
+h2{
+    font-size: 50px;
+    color: tomato;
+}

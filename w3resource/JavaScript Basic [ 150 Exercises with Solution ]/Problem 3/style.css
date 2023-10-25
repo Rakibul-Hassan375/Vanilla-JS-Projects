@@ -1,0 +1,26 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 90px;
+    margin: 20px 0px;
+    color: springgreen;
+}
+h2{
+    font-size: 50px;
+    color: crimson;
+    margin: 20px 0px;
+}
+.font{
+    font-size: 50px;
+}
+.clr_one{
+    color: cornflowerblue;
+}
+.clr_two{
+    color: turquoise;
+}
+.clr_three{
+    color: rgb(184, 185, 106);
+}

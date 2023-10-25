@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tittle -->
+    <title>Calculator</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font - Google - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Full main content -->
+    <div class="main">
+        <!-- Show the calculation -->
+        <div class="output-main">
+            <!-- Outputs -->
+            <div id="primary">0</div>
+            <div id="secondary">0</div>            
+        </div>
+        <!-- All button part -->
+        <div class="btn-main">
+            <button class="btn" value="#" onclick="all_clear_btn()">AC</button>
+            <button class="btn" value="#" onclick="dlt_btn()">DEL</button>
+            <button class="btn" value="/" onclick="operator_btn(event)">÷</button>
+            <button class="btn" value="1" onclick="num_btn(event)">1</button>
+            <button class="btn" value="2" onclick="num_btn(event)">2</button>
+            <button class="btn" value="3" onclick="num_btn(event)">3</button>
+            <button class="btn" value="*" onclick="operator_btn(event)">×</button>
+            <button class="btn" value="4" onclick="num_btn(event)">4</button>
+            <button class="btn" value="5" onclick="num_btn(event)">5</button>
+            <button class="btn" value="6" onclick="num_btn(event)">6</button>
+            <button class="btn" value="+" onclick="operator_btn(event)">+</button>
+            <button class="btn" value="7" onclick="num_btn(event)">7</button>
+            <button class="btn" value="8" onclick="num_btn(event)">8</button>
+            <button class="btn" value="9" onclick="num_btn(event)">9</button>
+            <button class="btn" value="-" onclick="operator_btn(event)">−</button>
+            <button class="btn" value="." onclick="num_btn(event)">.</button>
+            <button class="btn" value="0" onclick="num_btn(event)">0</button>
+            <button class="btn" value="=" onclick="equal_btn()">=</button>
+        </div>
+    </div>
+    <!-- Prime script file -->
+    <script src="myScript.js"></script>
+</body>
+</html>

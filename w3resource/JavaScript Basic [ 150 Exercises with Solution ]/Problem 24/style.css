@@ -1,0 +1,22 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 90px;
+    color: brown;
+}
+.lbl{
+    font-size: 50px;
+    color: cornflowerblue;
+}
+#value{
+    font-size: 50px;
+    color: crimson;
+    width: 15%;
+    border: 2px black solid;
+}
+#result{
+    font-size: 50px;
+    color: darkorange;
+}

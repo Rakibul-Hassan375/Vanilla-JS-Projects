@@ -1,0 +1,31 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 90px;
+    color: blueviolet;
+}
+.lbl{
+    font-size: 50px;
+    color: brown;
+}
+#number_one{
+    font-size: 50px;
+    color: chocolate;
+    width: 15%;
+}
+#number_two{
+    font-size: 50px;
+    color: chocolate;
+    width: 15%;
+}
+#btn{
+    font-size: 50px;
+    background-color: white;
+    border: 2px black solid;
+}
+#result{
+    font-size: 50px;
+    color: crimson;
+}

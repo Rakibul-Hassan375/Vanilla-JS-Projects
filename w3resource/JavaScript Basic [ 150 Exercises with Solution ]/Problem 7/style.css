@@ -1,0 +1,27 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 90px;
+    color: rgb(64, 179, 121);
+}
+#lbl{
+    font-size: 50px;
+    color: teal;
+}
+#day{
+    font-size: 50px;
+    color: teal;
+    width: 15%;
+    text-align: center;
+}
+#btn{
+    font-size: 50px;
+    background-color: white;
+    border: 2px black solid;
+}
+#result{
+    font-size: 60px;
+    color: skyblue;
+}

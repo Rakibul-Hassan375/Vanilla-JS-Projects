@@ -1,0 +1,28 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 65px;
+    color: brown;
+}
+#numr{
+    font-size: 50px;
+    color: sienna;
+    width: 10%;
+    border: 2px black solid;
+    text-align: center;
+}
+p{
+    font-size: 60px;
+    color: royalblue;
+}
+h2{
+    font-size: 50px;
+    font-weight: 400;
+    color: rgb(206, 47, 206);
+}
+#result{
+    font-size: 70px;
+    color: orangered;
+}

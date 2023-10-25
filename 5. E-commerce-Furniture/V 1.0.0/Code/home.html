@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tittle -->
+    <title>Comfy E-Commerce Home</title>
+    <!-- Google Fonts -->
+        <!-- Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- Courgette -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Style -->
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Main Content -->
+    <div>
+        <!-- Page 1 -->
+        <section id="page-one" class="page-one">
+            <!-- Header Section -->
+            <section class="header-section">
+                <div class="header-prime">
+                    <!-- Left Side -->
+                    <div class="left-side">
+                        <ul>
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="products.html">Products</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                        </ul>
+                        <h1>Comfy</h1>
+                    </div>
+                    <!-- Right Side -->
+                    <div class="right-side">
+                        <button type="button" onclick="openToCart()">
+                            <a href="#">
+                                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                            </a>
+                        </button>
+                        <span id="cart-count">0</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Body Section -->
+            <section class="body-section">
+                <div class="body-prime">
+                    <h1>Rest, Relax, Unwind</h1>
+                    <h2>Embrace your choices - we do</h2>
+                    <button>
+                        <a href="products.html">SHOP NOW</a>
+                    </button>
+                </div>
+            </section>
+        </section>
+        <!-- Intotal section Hidden or show -->
+        <section class="cart-show" id="cart-show-section" style="display: none;">
+            <div class="cart-show-prime">
+                <button class="cart-section-close" onclick="CloseCartShowSection()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="class-section-head">Your Bag</div>
+                <div class="cart-show-item">
+                    <ul id="cart-show-item" class="cart-show-item-prime">
+                        <!-- list -->
+                    </ul>
+                </div>
+                <div id="intotal" class="total">Total : $0.00 </div>
+                <div class="checkout-btn">
+                    <button class="checkout-main">Checkout</button>
+                </div>
+            </div>
+        </section>
+        <!-- page 2 -->
+        <section id="page-two" class="cart-section">
+            <div class="cart-section-prime">
+                <!-- Tittle -->
+                <div>
+                    <h1><span class="slash-color">/</span>Featured</h1>
+                </div>
+                <!-- Cart Section -->
+                <div id="product-prime" class="product-section">
+                    <!-- Show products -->
+                </div>
+                <!-- Cart Button Section -->
+                <button class="footer-button">
+                    <a href="products.html">ALL PRODUCTS</a>
+                </button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

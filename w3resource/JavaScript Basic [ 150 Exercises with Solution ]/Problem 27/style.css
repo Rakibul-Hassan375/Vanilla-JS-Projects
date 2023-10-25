@@ -1,0 +1,19 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 90px;
+    color: royalblue;
+}
+#insert{
+    font-size: 50px;
+    color: darkorange;
+    width: 15%;
+    border: 2px black solid;
+    text-align: center;
+}
+#result{
+    font-size: 50px;
+    color: crimson;
+}

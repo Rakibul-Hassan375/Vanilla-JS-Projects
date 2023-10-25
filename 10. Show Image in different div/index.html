@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Image</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-[945px] mx-auto grid grid-cols-3 gap-4 pt-28">
+        <div>
+            <img id="img_one" class="" src="./t1.jpg" alt="" onclick="showImage('./t1.jpg')">
+        </div>
+        <div>
+            <img id="img_two" class="" src="./t2.jpg" alt="" onclick="showImage('./t2.jpg')">
+        </div>
+        <div>
+            <img id="img_three" class="" src="./t3.jpg" alt="" onclick="showImage('./t3.jpg')">
+        </div>
+    </div>
+    <div class="w-[945px] pt-4 mx-auto grid grid-cols-3 gap-4">
+        <div>
+            <div>
+                <img id="show" class="" src="./t3.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-span-2 self-center">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro iste deserunt magni. Dolore, accusantium facilis, 
+                iusto et consequuntur eveniet beatae soluta accusamus mollitia excepturi a cumque tenetur minima quis iure?
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

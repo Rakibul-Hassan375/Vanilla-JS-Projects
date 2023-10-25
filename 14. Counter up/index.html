@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Up</title>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- jq -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</head>
+<body>
+    <div class="h-[100vh] grid bg-cover" style="background-image: url(./some-facts.png);">
+        <div class="grid grid-cols-4 justify-items-center place-items-center text-center text-[#ffffff]">
+            <div class="">
+                <i class="fa-solid fa-users-between-lines text-3xl pb-5"></i>
+                <div class="text-4xl font-black counter">368</div>
+                <!-- text-3xl font-medium pb-5  -->
+                <div class="text-base font-medium">Happy Clients</div>
+            </div>
+            <div class="">
+                <i class="fa-brands fa-github text-3xl pb-5""></i>
+                <div class="text-4xl font-black counter">937</div>
+                <div class="text-base font-medium">Projects Compleated</div>
+            </div>
+            <div class="">
+                <i class="fa-solid fa-download text-3xl pb-5""></i>
+                <div class="text-4xl font-black counter">438</div>
+                <div class="text-base font-medium">Files Downloaded</div>
+            </div>
+            <div class="">
+                <i class="fa-solid fa-code text-3xl pb-5""></i>
+                <div class="text-4xl font-black counter">5946</div>
+                <div class="text-base font-medium">Liens Of Code</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let elements = document.querySelectorAll('.counter')
+        elements.forEach((v,i)=>{
+            counterUP(v, parseInt(v.innerText))
+        })
+        function counterUP(element, maxvalue, startvalue = 0){
+            element.innerText = startvalue
+            if( startvalue < maxvalue ){
+                setTimeout(()=>{
+                    counterUP(element, maxvalue, startvalue + 1 )
+                },1)
+            }
+        }
+    </script>
+</body>
+</html>

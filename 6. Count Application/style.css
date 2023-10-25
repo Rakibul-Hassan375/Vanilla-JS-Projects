@@ -1,0 +1,25 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    color: slateblue;
+    font-size: 90px;
+}
+#counter{
+    font-size: 50px;
+}
+#increase{
+    font-size: 50px;
+    margin: 20px 30px;
+    padding: 10px 50px;
+    background-color: skyblue;
+    border: 0;
+}
+#decrease{
+    font-size: 50px;
+    margin: 20px 30px;
+    padding: 10px 50px;
+    background-color: peru;
+    border: 0;
+}

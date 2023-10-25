@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.page-one {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Asset/main-bcg.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header-prime {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 61%;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.left-side {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+}
+.left-side ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.left-side a {
+  margin-right: 50px;
+  text-decoration: none;
+  font-weight: 400;
+  color: rgba(16, 42, 66, 0.7490196078);
+  font-size: 20px;
+  transition: 0.5s;
+}
+.left-side a:hover {
+  color: #BA5D2C;
+  transition: 0.5s;
+}
+.left-side h1 {
+  font-family: "Courgette", cursive;
+  font-size: 45px;
+  margin: 0;
+  padding: 0;
+  color: #102A42;
+}
+
+.right-side {
+  position: relative;
+}
+.right-side button {
+  background-color: transparent;
+  border: none;
+  color: #102A42;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+  padding-right: 20px;
+}
+.right-side span {
+  position: absolute;
+  top: -15px;
+  right: 5px;
+  background-color: #BA5D2C;
+  color: white;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  font-weight: bold;
+  text-align: center;
+  display: inline-grid;
+  align-content: center;
+}
+
+.mid-head-section {
+  background-color: #F1F5F8;
+}
+.mid-head-section div {
+  width: 61%;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  height: 190px;
+}
+.mid-head-section div h1 {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #617D98;
+}
+
+.main-paragraph {
+  width: 40%;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  display: flex;
+  text-align: left;
+  justify-content: left;
+}
+.main-paragraph p {
+  color: rgba(24, 68, 109, 0.72);
+  margin: 0;
+  line-height: 2;
+  font-size: 15px;
+  margin-bottom: 85px;
+}
+
+.main-p-top {
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.main-p-top span {
+  color: #BA5D2C;
+}
+.main-p-top h1 {
+  font-size: 38px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding-left: 15px;
+  color: #102A42;
+}/*# sourceMappingURL=about.css.map */

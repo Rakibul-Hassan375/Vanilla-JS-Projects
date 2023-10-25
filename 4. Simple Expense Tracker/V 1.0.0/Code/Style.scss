@@ -1,0 +1,207 @@
+// Main Body
+body{
+    margin: 0;
+    padding: 0;
+}
+// Custom
+.color-one{
+    color: #32de84;
+}
+.color-one-border{
+    border-right: 10px solid #32de84;
+}
+.bg-color-one{
+    background-color: #32de84;
+}
+.color-two{
+    color: #B22222;
+}
+.color-two-border{
+    border-right: 10px solid #B22222;
+}
+.bg-color-two{
+    background-color: #b90000;
+}
+// Header Section
+.header-section{
+    h1{
+        width: 100%;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 60px;
+        font-weight: 400;
+        margin: 0 auto;
+        padding: 20px 0;
+        text-align: center;
+        color: white;
+        background-color: #B22222;
+    }
+}
+// Income and Expense section
+.inc-exp-section-prime{
+    display: flex;
+    justify-content: center;
+}
+// Show and Add the Income and Expense
+.inc-exp-function{
+    width: 400px;
+    margin: 20px 20px;
+    padding: 0px 20px;
+    box-shadow: 3px 1px 10px grey;
+    background-color: aliceblue;
+    h1{
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 20px;
+        padding: 15px 0;
+        margin: 0;
+        font-weight: 500;
+        border-bottom: 1px solid black;
+    }
+    h2{
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        margin: 15px 0;
+        padding: 0;
+    }
+}
+// Show the amount of Income and Expense
+.inc-exp-show{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px grey;
+    margin: 20px 0px;
+    h3{
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 0;
+        font-size: 20px;
+    }
+    h4{
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 5px;
+        padding: 0;
+        font-size: 30px;
+    }
+    div{
+        padding: 0px 45px;
+    }
+}
+.inc-show{
+    border-right: 1px solid gray;
+}
+// Add new Income and Expense
+form{
+    label{
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 400;
+        display: inline-block;
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    input{
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 400;
+        display: block;
+        font-size: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    button{
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 500;
+        padding: 10px 0px;
+        margin: 30px 0px;
+        width: 100%;
+        font-size: 30px;
+        cursor: pointer;
+        border: 2px black solid;
+    }
+}
+.bg-color-one:hover{
+    background-color: #03c460;
+}
+.bg-color-two:hover{
+    background-color: #B22222;
+}
+// Show the history and details of Income and Expense
+.inc-exp-history{
+    width: 600px;
+    margin: 20px 20px;
+    padding: 0px 20px;
+    box-shadow: 3px 1px 10px grey;
+    background-color: aliceblue;
+    h1{
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 20px;
+        padding: 15px 0;
+        margin: 0;
+        font-weight: 500;
+        border-bottom: 1px solid black;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+    }
+}
+.list-prime{
+    margin-top: 15px;
+    padding: 0 10px;
+    box-shadow: 0px 0px 5px grey;
+}
+.top-list{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.details{
+    display: flex;
+    h3{
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 400;
+        margin: 0;
+        margin-right: 30px;
+        padding: 0;
+        font-size: 20px;
+    }
+}
+.buttons{
+    button{
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 400;
+        margin: 0;
+        margin-left: 10px;
+        padding: 0;
+        font-size: 20px;
+        border: none;
+        background-color: white;
+        color: gray;
+        cursor: pointer;
+        &:hover{
+            color: black;
+        }
+    }
+}
+.bot-list{
+    padding-bottom: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    h3{
+        margin: 0;
+        margin-left: 15px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        color: gray;
+    }
+}

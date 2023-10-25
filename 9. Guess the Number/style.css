@@ -1,0 +1,31 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 90px;
+    color: teal;
+    text-decoration: underline;
+}
+.p_first{
+    font-size: 70px;
+    color: cadetblue;
+}
+#guess_the_numr{
+    font-size: 50px;
+    color: slateblue;
+}
+#number{
+    font-size: 38px;
+    color: steelblue;
+    width: 5%;
+    text-align: center;
+}
+#guess_btn{
+    font-size: 38px;
+    background-color: white;
+    border: 3px black solid;
+}
+#result{
+    font-size: 50px;
+}

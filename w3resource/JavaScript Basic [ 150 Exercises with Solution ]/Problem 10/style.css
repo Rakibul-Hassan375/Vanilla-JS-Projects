@@ -1,0 +1,42 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 90px;
+    color: rgb(47, 47, 218);
+}
+#one_lbl{
+    font-size: 50px;
+    color: steelblue;
+}
+#number_one{
+    width: 15%;
+    color: seagreen;
+    text-align: center;
+    font-size: 50px;
+}
+#two_lbl{
+    font-size: 50px;
+    color: steelblue;
+}
+#number_two{
+    width: 15%;
+    color: seagreen;
+    text-align: center;
+    font-size: 50px;
+}
+#btn_one{
+    background-color: white;
+    border: 2px black solid;
+    font-size: 50px;
+}
+#btn_two{
+    background-color: white;
+    border: 2px black solid;
+    font-size: 50px;
+}
+#result{
+    font-size: 50px;
+    color: sandybrown;
+}

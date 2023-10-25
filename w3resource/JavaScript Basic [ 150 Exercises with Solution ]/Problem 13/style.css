@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+    margin: auto;
+}
+h1{
+    font-size: 90px;
+    color: springgreen;
+}
+h2{
+    font-size: 50px;
+    color: peru;
+}
+p{
+    font-size: 60px;
+    color: royalblue;
+}
+#result{
+    font-size: 70px;
+    color: orangered;
+}

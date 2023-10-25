@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-[#a52a2a]">
+    <section class="flex justify-center h-[100vh] w-[50%] mx-auto items-center bg-purple">
+        <div class="bg-white p-10">
+            <h1 class="text-6xl font-semibold text-center pb-4">Password Validation</h1>
+            <input class="mb-4 text-center w-full py-2 text-xl border-0 outline-0 border-b-4 border-black" 
+                type="password" id="password" placeholder="Enter a password" oninput="check()">
+            <div class="flex justify-between pb-4">
+                <h2 class="text-xl font-medium">Length : <span class="text-xl font-semibold" id="length">0</span></h2>
+                <div>
+                    <i class="fa-regular fa-eye text-xl font-medium cursor-pointer" onclick="show()"></i>
+                </div>
+            </div>
+            <div>
+                <div class="text-3xl font-light pb-4 flex text-[red]" id="term-1">
+                    <i class="fa-solid fa-check"></i>
+                    <p class="pl-4">Length more then 5.</p>
+                </div>
+                <div class="text-3xl font-light pb-4 flex text-[red]" id="term-2">
+                    <i class="fa-solid fa-check"></i>
+                    <p class="pl-4">Length less then 10.</p>
+                </div>
+                <div class="text-3xl font-light pb-4 flex text-[red]" id="term-3">
+                    <i class="fa-solid fa-check"></i>
+                    <p class="pl-4">Contains numerical character.</p>
+                </div>
+                <div class="text-3xl font-light pb-4 flex text-[red]" id="term-4">
+                    <i class="fa-solid fa-check"></i>
+                    <p class="pl-4">Contains special character.</p>
+                </div>
+                <div class="text-3xl font-light pb-4 flex text-[red]" id="term-5">
+                    <i class="fa-solid fa-check"></i>
+                    <p class="pl-4">Should not contain space.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

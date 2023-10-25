@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tittle -->
+    <title>Income Expense Tracker</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="Style.css">
+    <!-- Fonts -->
+        <!-- Fira Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- Noto Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="full-contain">
+        <div class="full-contain-prime">
+            <!-- Header Section -->
+            <section class="header-section">
+                <h1>Financial Dashboard</h1>
+            </section>
+            <!-- Income and Expense section -->
+            <section class="inc-exp-section">
+                <div class="inc-exp-section-prime">
+                    <!-- Show and Add the Income and Expense -->
+                    <section class="inc-exp-function">
+                        <h1>Remaining Balance</h1>
+                        <h2><span>$</span> <span id="totalBalance">0</span></h2>
+                        <!-- Show the amount of Income and Expense -->
+                        <div class="inc-exp-show">
+                            <div class="inc-show">
+                                <h3>Income</h3>
+                                <h4 class="color-one" id="totalIncome">0</h3>
+                            </div>
+                            <div class="exp-show">
+                                <h3>Expense</h3>
+                                <h4 class="color-two" id="totalExpenses">0</h3>
+                            </div>
+                        </div>
+                        <h1>Register a new transaction</h1>
+                        <!-- Add new Income and Expense -->
+                        <form action="">
+                            <!-- Income -->
+                            <div>
+                                <label for="incomeName">Name of Income</label>
+                                <input type="text" id="incomeName" placeholder="Enter a name... e.g. 'Salary'">
+                            </div>
+                            <div>
+                                <label for="incomeAmount">Log an Income</label>
+                                <input type="number" id="incomeAmount" placeholder="Enter an amount... e.g. '10000'">
+                            </div>
+                            <button class="bg-color-one" type="submit" onclick="addIncome(event)">Enter Earnings</button>
+                            <!-- Expense -->
+                            <div>
+                                <label for="expenseName">Name of Expense</label>
+                                <input type="text" id="expenseName" placeholder="Enter a name... e.g. 'Transport'">
+                            </div>
+                            <div>
+                                <label for="expenseAmount">Log an Expense</label>
+                                <input type="number" id="expenseAmount" placeholder="Enter a amount... e.g. '10000'">
+                            </div>
+                            <button class="bg-color-two" type="submit" onclick="addExpense(event)">Enter Expenditure</button>
+                        </form>
+                    </section>
+                    <!-- Show the history and details of Income and Expense -->
+                    <section class="inc-exp-history">
+                        <div class="inc-exp-history-prime">
+                            <!-- Income and Expense History Header -->
+                            <h1>Financial record of earnings and expenses</h1>
+                            <!-- Income and Expense History lists -->
+                            <ul id="mainList">
+                                <!-- lists -->
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="myScript.js"></script>
+</body>
+</html>

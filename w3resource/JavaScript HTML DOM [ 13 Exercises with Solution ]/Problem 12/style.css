@@ -1,0 +1,26 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 70px;
+    color: brown;
+}
+h3{
+    font-size: 70px;
+    color: rgb(190, 63, 63);
+}
+#lbl{
+    font-size: 50px;
+    color: cornflowerblue;
+    text-decoration: none;
+}
+#inpt{
+    font-size: 50px;
+    color: darkorange;
+    text-align: center;
+}
+.highlight {
+    background-color: royalblue;
+  }
+  

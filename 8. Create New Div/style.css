@@ -1,0 +1,36 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 90px;
+    color: crimson;
+    margin: 0px;
+}
+.btn_area{
+    background-color: rgb(243, 176, 190);
+}
+#adddiv{
+    font-size: 50px;
+    background-color: rgb(243, 176, 190);
+    margin: 20px 20px;
+    border: black 5px solid;
+    cursor: pointer;
+}
+.div_area{
+    background-color: cornflowerblue;
+    height: 465px;
+    width: 450px;
+    margin: auto;
+}
+#clm_main{
+    text-align: left;
+}
+.clm{
+    width: 80px;
+    height: 80px;
+    background-color: purple;
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+}

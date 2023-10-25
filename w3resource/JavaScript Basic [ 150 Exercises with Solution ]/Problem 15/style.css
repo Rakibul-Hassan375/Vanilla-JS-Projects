@@ -1,0 +1,30 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 80px;
+    color: tomato;
+}
+#number{
+    font-size: 50px;
+    color: crimson;
+    width: 15%;
+    text-align: center;
+    border: 2px black solid;
+}
+h2{
+    font-size: 50px;
+    color: seagreen;
+    font-weight: 400;
+}
+p{
+    font-size: 50px;
+    font-weight: bold;
+    color: royalblue;
+}
+#result{
+    font-size: 50px;
+    color: purple;
+    font-weight: 400;
+}

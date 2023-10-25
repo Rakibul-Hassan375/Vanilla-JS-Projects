@@ -1,0 +1,29 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 90px;
+    color: rgb(51, 134, 93);
+}
+h2{
+    font-size: 60px;
+}
+.all{
+    font-size: 50px;
+}
+#date{
+    color: brown;
+}
+#weekDay{
+    color: steelblue;
+}
+#year{
+    color: cornflowerblue;
+}
+#time{
+    color: crimson;
+}
+#tim2{
+    color: darkgoldenrod;
+}

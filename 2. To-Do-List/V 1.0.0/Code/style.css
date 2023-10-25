@@ -1,0 +1,246 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 55rem;
+  background: linear-gradient(169deg, rgb(0, 106, 175) 20%, rgb(0, 224, 255) 51%);
+  background-repeat: no-repeat;
+}
+
+.main_content {
+  margin: auto;
+}
+
+.head_main {
+  width: 40%;
+  margin: 50px auto;
+  background-color: rgba(0, 208, 255, 0.5098039216);
+  box-shadow: 0px 0px 30px;
+  border-radius: 15px 50px 30px 5px;
+}
+.head_main .head_prime {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.head_main h1 {
+  font-size: 60px;
+  font-weight: 300;
+  color: black;
+}
+.head_main img {
+  width: 150px;
+  height: 150px;
+  margin: auto 0;
+}
+
+.add_li_main {
+  margin: 50px auto;
+}
+.add_li_main form {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.add_li_main input:focus, .add_li_main textarea:focus, .add_li_main select:focus {
+  outline: none;
+}
+.add_li_main input {
+  width: 40%;
+  font-size: 40px;
+  border: 1px solid black;
+}
+.add_li_main input::-moz-placeholder {
+  color: deepskyblue;
+  text-transform: uppercase;
+  border: none;
+}
+.add_li_main input::placeholder {
+  color: deepskyblue;
+  text-transform: uppercase;
+  border: none;
+}
+.add_li_main button {
+  font-size: 40px;
+  font-weight: 400;
+  color: deepskyblue;
+  background-color: white;
+  margin: 0px 10px;
+  padding: 0px 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.9s;
+}
+.add_li_main button:hover {
+  color: black;
+  background-color: deepskyblue;
+  transition: 0.9s;
+}
+
+.list_main {
+  width: 40%;
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  margin: auto;
+}
+.list_main ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.list_main .info_main {
+  padding-top: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.list_main .custom-width {
+  display: flex;
+  width: 85%;
+  text-align: left;
+}
+.list_main .custom-checkbox {
+  width: 25px;
+  height: 25px;
+  bottom: -7px;
+  border: 2px solid black;
+  outline: none;
+  cursor: pointer;
+  vertical-align: baseline;
+  position: relative;
+}
+.list_main .li_text {
+  font-size: 30px;
+}
+.list_main button {
+  width: 30px;
+  height: 30px;
+  outline: none;
+  vertical-align: super;
+  position: relative;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.list_main button:hover {
+  background-color: black;
+  color: deepskyblue;
+  transition: 0.9s;
+}
+
+.info {
+  display: flex;
+  text-align: left;
+  justify-content: end;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+.info .w3 {
+  font-size: 20px;
+  text-align: left;
+  width: 130px;
+  color: rgba(0, 0, 0, 0.39);
+}
+.info .w4 {
+  font-size: 20px;
+  text-align: left;
+  width: 185px;
+  color: rgba(0, 0, 0, 0.39);
+}
+.info .w5 {
+  font-size: 20px;
+  width: 100px;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.39);
+}
+
+.task_done {
+  text-decoration: line-through;
+}
+
+@media (max-width: 1280px) {
+  .add_li_main input {
+    font-size: 25px;
+  }
+  .add_li_main button {
+    font-size: 25px;
+  }
+  .list_main .custom-width {
+    width: 80%;
+  }
+  .list_main .li_text {
+    font-size: 20px;
+  }
+  .list_main .custom-checkbox {
+    bottom: 0px;
+    width: 18px;
+  }
+}
+@media (max-width: 420px) {
+  .head_main {
+    width: 90%;
+    margin: 30px auto;
+  }
+  .head_main h1 {
+    font-size: 40px;
+  }
+  .head_main img {
+    width: 100px;
+    height: 100px;
+  }
+  .add_li_main {
+    margin: 50px auto 10px auto;
+  }
+  .add_li_main form {
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  .add_li_main input {
+    font-size: 20px;
+    padding: 0;
+    width: 80%;
+  }
+  .add_li_main button {
+    font-size: 20px;
+    width: 80%;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .list_main {
+    width: 90%;
+  }
+  .list_main .custom-width {
+    width: 70%;
+    font-size: 15px;
+  }
+  .list_main .li_text {
+    font-size: 15px;
+  }
+  .list_main .custom-checkbox {
+    bottom: 4px;
+    width: 15px;
+  }
+  .list_main button {
+    width: 25px;
+    height: 25px;
+  }
+  .list_main .info .w3 {
+    font-size: 15px;
+  }
+  .list_main .info .w4 {
+    font-size: 15px;
+  }
+  .list_main .info .w5 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 420px) {
+  body {
+    min-height: 56rem;
+  }
+}/*# sourceMappingURL=style.css.map */

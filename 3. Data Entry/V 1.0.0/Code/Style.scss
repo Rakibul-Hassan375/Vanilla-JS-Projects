@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(28, 32, 44);
+}
+// Classlist by JS
+.blur{
+    filter: blur(10px);
+    pointer-events: none;
+}
+.terminate{
+    text-decoration: line-through;
+    color: white;
+    text-decoration-thickness: 2px;
+}
+// Full content
+.fl_cont{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: rgb(32 36 59);
+}
+// Front / Main Content
+.front_cont{
+    min-height: 100vh;
+    h1{
+        text-align: center;
+        font-family: 'Fira Sans', sans-serif;
+        color: white;
+        font-size: 70px;
+        font-weight: 400;
+        margin: 0;
+        padding: 50px 0;
+    }
+    .front_cont_btn{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        h2{
+            margin: 0;
+            font-weight: 400;
+            font-family: 'Fira Sans', sans-serif;
+            color: #ffffffbd;
+            font-size: 50px
+        }
+        button{
+            margin: 0;
+            padding: 0;
+            color: #ffffffbd;
+            font-size: 50px;
+            font-weight: 400;
+            font-family: 'Fira Sans', sans-serif;
+            cursor: pointer;
+            border: none;
+            border-bottom: 2px #ffffffbd solid;
+            background-color: transparent;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}
+// Table Part
+.t_p{
+    margin-top: 50px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th{
+    border: 1px solid #ffffffbd;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Noto Sans', sans-serif;
+}
+td{
+    border: 1px solid #ffffffbd;
+    text-align: center;
+    color: #ffffffbd;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Noto Sans', sans-serif;
+    button{
+        border: none;
+        color: #ffffffbd;
+        cursor: pointer;
+        background-color: transparent;
+    }
+}
+// Custom
+.th_1{
+    width: 120px;
+}
+.th_2{
+    width: 280px;
+}
+.th_3{
+    width: 160px;
+}
+.th_4{
+    width: 300px;
+}
+.th_5{
+    width: 80px;
+}
+.th_6{
+    width: 120px;
+}
+.w1{
+    width: 80px;
+    text-align: center;
+    font-weight: 700;
+}
+.w2{
+    width: 55px;
+    text-align: center;
+    font-weight: 700;
+}
+.w3{
+    width: 100px;
+    text-align: center;
+    font-weight: 700;
+}
+.td_btn{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.td_btn_m:hover{
+    color: white;
+}
+// Enroll content
+.enroll-cont{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    margin: auto 0;
+    form{
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        right: 25%;
+        div{
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            label{
+                font-family: 'Fira Sans', sans-serif;
+                font-size: 30px;
+            }
+            input{
+                font-family: 'Noto Sans', sans-serif;
+                font-size: 30px;
+                width: 70%;
+            }
+            
+        }
+    }
+}
+.submit-button-section{
+    width: 50%;
+    margin: 0 auto;
+    button{
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        padding-top: 50px;
+        font-size: 50px;
+    }
+}
+.en_ed{
+    color: #ffffffbd;
+}
+.en_ed_btn{
+    color: white;
+}

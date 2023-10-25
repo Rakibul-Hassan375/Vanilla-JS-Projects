@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tittle -->
+    <title>Fixed Navbar</title>
+    <!-- cdn - font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts - Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,600;0,700;0,800;0,900;0,1000;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <!-- cdn - tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- navigation bar -->
+    <section class="top-0 left-0 right-0 fixed z-10" id="nav-bar">
+        <nav class="mx-auto 2xl:w-[1250px] xl:w-[1100px] lg:w-[900px] w-full">
+            <div class="flex justify-between items-center pt-8 ">
+                <!-- navigation icon -->
+                <img class="cursor-pointer pl-4 lg:pl-0" src="./nav-logo.png" alt="Company logo representing our brand">
+                <!-- navigation content -->
+                <div class="lg:flex">
+                    <!-- small display navigation button -->
+                    <i class="fa-solid fa-bars text-4xl px-4 lg:hidden cursor-pointer" style="color: #f24259;" onclick="showContent()"></i>
+                    <!-- navigation content main -->
+                    <ul class="hidden lg:flex lg:gap-6 text-black items-center text-base font-medium text-white" id="ul-bg">
+                        <li class="hover:text-[#F24259] ease-in duration-300"><a href="#">Home</a></li>
+                        <li class="hover:text-[#F24259] ease-in duration-300"><a href="#">About</a></li>
+                        <li class="hover:text-[#F24259] ease-in duration-300"><a href="#">Services</a></li>
+                        <li class="hover:text-[#F24259] ease-in duration-300"><a href="#">Portfolio</a></li>
+                        <li class="hover:text-[#F24259] ease-in duration-300"><a href="#">team</a></li>
+                        <li class="hover:text-[#F24259] ease-in duration-300"><a href="#">Price</a></li>
+                        <li class="hover:text-[#F24259] ease-in duration-300"><a href="#">Blog</a></li>
+                        <li class="hover:text-[#F24259] ease-in duration-300"><a href="#">Contact</a></li>
+                        <!-- navigation button -->
+                        <li>
+                            <a href="" class="rounded-full px-8 py-2 text-white hover:text-black bg-[#F24259] hover:bg-white 
+                            border border-[#F24259] hover:border hover:border-[#F24259] ease-in duration-300 hidden lg:block">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- small display navigation content -->
+            <div class="flex justify-end mx-auto px-4 py-4 text-end">
+                <!-- small display navigation content main -->
+                <ul class="lg:gap-6 text-black items-center text-base font-medium text-white" style="display: none;" id="smallcontent">
+                    <li class="pb-2 hover:text-[#F24259] ease-in duration-300"><a href="#">Home</a></li>
+                    <li class="pb-2 hover:text-[#F24259] ease-in duration-300"><a href="#">About</a></li>
+                    <li class="pb-2 hover:text-[#F24259] ease-in duration-300"><a href="#">Services</a></li>
+                    <li class="pb-2 hover:text-[#F24259] ease-in duration-300"><a href="#">Portfolio</a></li>
+                    <li class="pb-2 hover:text-[#F24259] ease-in duration-300"><a href="#">team</a></li>
+                    <li class="pb-2 hover:text-[#F24259] ease-in duration-300"><a href="#">Price</a></li>
+                    <li class="pb-2 hover:text-[#F24259] ease-in duration-300"><a href="#">Blog</a></li>
+                    <li class="hover:text-[#F24259] ease-in duration-300"><a href="#">Contact</a></li>
+                    <!-- navigation button -->
+                    <li>
+                        <a href="" class="rounded-full px-8 py-2 text-white hover:text-black bg-[#F24259] hover:bg-white 
+                        border border-[#F24259] hover:border hover:border-[#F24259] ease-in duration-300 hidden lg:block">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- page one -->
+    <section class="bg-no-repeat bg-cover bg-fixed h-[100vh]" style="background-image: url(./nav-bar-slider.png);">
+        <!-- page one body -->
+        <div class="h-full md:w-[645px] mx-auto flex items-center justify-center">
+            <div class="mx-auto xl:w-[1100px] text-center text-white pt-[150px] lg:pt-0">
+                <h1 class="text-6xl md:text-7xl pb-5 font-extrabold uppercase">be creative</h1>
+                <p class="text-base text-[#d1e5e7] pb-6 font-light px-8 md:px-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua.
+                </p>
+                <div class="grid md:flex justify-center gap-6 pb-6 md:pb-0">
+                    <button class="text-sm font-medium rounded-full px-8 py-2 text-white hover:text-black bg-[#F24259] hover:bg-white ease-in duration-300" type="button">About Us !</button>
+                    <button class="text-sm font-medium rounded-full px-8 py-2 text-white hover:text-black border border-white hover:bg-white ease-in duration-300" type="button">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- page two -->
+    <section class="py-32">
+        <div class="mx-auto 2xl:w-[1250px] xl:w-[1100px] lg:w-[900px] w-full">
+            <!-- page headings -->
+            <div class="text-center mb-[60px]">
+                <h1 class="text-3xl font-bold pb-6">Welcome to our agency <span class="text-[#f24259] font-bold">Moro</span></h1>
+                <p class="text-base font-light text-[#999999]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <p class="text-base font-light text-[#999999]">incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <!-- agency introduction -->
+            <div class="grid justify-items-center lg:grid-cols-3 gap-8 px-10">
+                <div class="text-center py-6 px-10 rounded border-b-2 border-rose-500 shadow-2xl hover:-translate-y-2.5 transition duration-500 ease-in-out">
+                    <i class="fa-brands fa-figma text-[40px] pb-4 mb-4 border-b-2 border-[#f24259]" style="color: #f24259;"></i>
+                    <h2 class="text-lg font-semibold pb-2">Creative Design</h2>
+                    <p class="text-base font-light text-[#999999] pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                </div>
+                <div class="text-center py-6 px-10 rounded border-b-2 border-rose-500 shadow-2xl hover:-translate-y-2.5 transition duration-500 ease-in-out">
+                    <i class="fa-solid fa-code text-[40px] pb-4 mb-4 border-b-2 border-[#f24259]" style="color: #f24259;"></i>
+                    <h2 class="text-lg font-semibold pb-2">Web Development</h2>
+                    <p class="text-base font-light text-[#999999] pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                </div>
+                <div class="text-center py-6 px-10 rounded border-b-2 border-rose-500 shadow-2xl hover:-translate-y-2.5 transition duration-500 ease-in-out">
+                    <i class="fa-solid fa-store text-[40px] pb-4 mb-4 border-b-2 border-[#f24259]" style="color: #f24259;"></i>
+                    <h2 class="text-lg font-semibold pb-2">Marketing</h2>
+                    <p class="text-base font-light text-[#999999] pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-32">
+        <div class="mx-auto 2xl:w-[1250px] xl:w-[1100px] lg:w-[900px] w-full">
+            <!-- page headings -->
+            <div class="text-center mb-[60px]">
+                <h1 class="text-3xl font-bold pb-6">Welcome to our agency <span class="text-[#f24259] font-bold">Moro</span></h1>
+                <p class="text-base font-light text-[#999999]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <p class="text-base font-light text-[#999999]">incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <!-- agency introduction -->
+            <div class="grid justify-items-center lg:grid-cols-3 gap-8 px-10">
+                <div class="text-center py-6 px-10 rounded border-b-2 border-rose-500 shadow-2xl hover:-translate-y-2.5 transition duration-500 ease-in-out">
+                    <i class="fa-brands fa-figma text-[40px] pb-4 mb-4 border-b-2 border-[#f24259]" style="color: #f24259;"></i>
+                    <h2 class="text-lg font-semibold pb-2">Creative Design</h2>
+                    <p class="text-base font-light text-[#999999] pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                </div>
+                <div class="text-center py-6 px-10 rounded border-b-2 border-rose-500 shadow-2xl hover:-translate-y-2.5 transition duration-500 ease-in-out">
+                    <i class="fa-solid fa-code text-[40px] pb-4 mb-4 border-b-2 border-[#f24259]" style="color: #f24259;"></i>
+                    <h2 class="text-lg font-semibold pb-2">Web Development</h2>
+                    <p class="text-base font-light text-[#999999] pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                </div>
+                <div class="text-center py-6 px-10 rounded border-b-2 border-rose-500 shadow-2xl hover:-translate-y-2.5 transition duration-500 ease-in-out">
+                    <i class="fa-solid fa-store text-[40px] pb-4 mb-4 border-b-2 border-[#f24259]" style="color: #f24259;"></i>
+                    <h2 class="text-lg font-semibold pb-2">Marketing</h2>
+                    <p class="text-base font-light text-[#999999] pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-32">
+        <div class="mx-auto 2xl:w-[1250px] xl:w-[1100px] lg:w-[900px] w-full">
+            <!-- page headings -->
+            <div class="text-center mb-[60px]">
+                <h1 class="text-3xl font-bold pb-6">Welcome to our agency <span class="text-[#f24259] font-bold">Moro</span></h1>
+                <p class="text-base font-light text-[#999999]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <p class="text-base font-light text-[#999999]">incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <!-- agency introduction -->
+            <div class="grid justify-items-center lg:grid-cols-3 gap-8 px-10">
+                <div class="text-center py-6 px-10 rounded border-b-2 border-rose-500 shadow-2xl hover:-translate-y-2.5 transition duration-500 ease-in-out">
+                    <i class="fa-brands fa-figma text-[40px] pb-4 mb-4 border-b-2 border-[#f24259]" style="color: #f24259;"></i>
+                    <h2 class="text-lg font-semibold pb-2">Creative Design</h2>
+                    <p class="text-base font-light text-[#999999] pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                </div>
+                <div class="text-center py-6 px-10 rounded border-b-2 border-rose-500 shadow-2xl hover:-translate-y-2.5 transition duration-500 ease-in-out">
+                    <i class="fa-solid fa-code text-[40px] pb-4 mb-4 border-b-2 border-[#f24259]" style="color: #f24259;"></i>
+                    <h2 class="text-lg font-semibold pb-2">Web Development</h2>
+                    <p class="text-base font-light text-[#999999] pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                </div>
+                <div class="text-center py-6 px-10 rounded border-b-2 border-rose-500 shadow-2xl hover:-translate-y-2.5 transition duration-500 ease-in-out">
+                    <i class="fa-solid fa-store text-[40px] pb-4 mb-4 border-b-2 border-[#f24259]" style="color: #f24259;"></i>
+                    <h2 class="text-lg font-semibold pb-2">Marketing</h2>
+                    <p class="text-base font-light text-[#999999] pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

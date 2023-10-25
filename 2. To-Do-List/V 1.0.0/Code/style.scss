@@ -1,0 +1,255 @@
+// universal
+    // Font - Google - Poppins
+    *{
+        font-family: 'Poppins', sans-serif;
+    }
+// body
+    body{
+        margin: 0;
+        padding: 0;
+        min-height: 55rem;
+        background: linear-gradient(169deg, rgba(0,106,175,1) 20%, rgba(0,224,255,1) 51%);
+        background-repeat: no-repeat;
+    }
+// Main
+    .main_content{
+        margin: auto;
+    }
+// Header Section
+    .head_main{
+        width: 40%;
+        margin: 50px auto;
+        background-color: #00d0ff82;
+        box-shadow: 0px 0px 30px;
+        border-radius: 15px 50px 30px 5px;
+
+        .head_prime{
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+            // Header text
+            h1{
+                font-size: 60px;
+                font-weight: 300;
+                color: black;
+            }
+            // Header Image
+            img{
+                width: 150px;
+                height: 150px;
+                margin: auto 0;
+            }
+    }
+// Addding List Section
+    .add_li_main{
+        margin: 50px auto;
+            form{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+            input:focus, textarea:focus, select:focus{
+                outline: none;
+            }
+            input{
+                width: 40%;
+                font-size: 40px;
+                border: 1px solid black;
+
+                &::placeholder{
+                    color: deepskyblue;
+                    text-transform: uppercase;
+                    border: none;
+                }
+            }
+            button{
+                font-size: 40px;
+                font-weight: 400;
+                color: deepskyblue;
+                background-color: white;
+                margin: 0px 10px;
+                padding: 0px 10px;
+                border: 1px solid black;
+                cursor: pointer;
+                transition: 0.9s;
+
+                &:hover{
+                    color: black;
+                    background-color: deepskyblue;
+                    transition: 0.9s;
+                }
+            }
+    }
+// List Section
+    .list_main{
+        width: 40%;
+        display: flex;
+        text-align: left;
+        justify-content: left;
+        margin: auto;
+            ul{
+                list-style: none;
+                padding: 0;
+                width: 100%;
+            }
+            .info_main{
+                padding-top: 10px;
+                display: flex;
+                text-align: center;
+                justify-content: space-between;
+            }
+            .custom-width{
+                display: flex;
+                width: 85%;
+                text-align: left;
+            }
+            .custom-checkbox{
+                width: 25px;
+                height: 25px;
+                bottom: -7px;
+                border: 2px solid black;
+                outline: none;
+                cursor: pointer;
+                vertical-align: baseline;
+                position: relative;
+            }
+            .li_text{
+                font-size: 30px;
+            }
+            button{
+                width: 30px;
+                height: 30px;
+                outline: none;
+                vertical-align: super;
+                position: relative;
+                background-color: white;
+                border: 1px solid black;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: black;
+                    color: deepskyblue;
+                    transition: 0.9s;
+                }
+            }
+    }
+// 2nd List
+    .info{
+        display: flex;
+        text-align: left;
+        justify-content: end;
+        padding-bottom: 10px;
+        border-bottom: 2px solid black;
+            .w3{
+                font-size: 20px;
+                text-align: left;
+                width: 130px;
+                color: rgb(0 0 0 / 39%);
+            }
+            .w4{
+                font-size: 20px;
+                text-align: left;
+                width: 185px;
+                color: rgb(0 0 0 / 39%);
+            }
+            .w5{
+                font-size: 20px;
+                width: 100px;
+                text-align: right;
+                color: rgb(0 0 0 / 39%);
+            }
+    }
+// JavaScript Created Class
+    .task_done{
+        text-decoration: line-through;
+    }
+// Responsive
+    @media (max-width: 1280px) {
+        .add_li_main{
+            input{
+                font-size: 25px;
+            }
+            button{
+                font-size: 25px;
+            }
+        }
+        .list_main{
+            .custom-width{
+                width: 80%;
+            }
+            .li_text{
+                font-size: 20px;
+            }
+            .custom-checkbox{
+                bottom: 0px;
+                width: 18px;
+            }
+        }
+    }
+    @media (max-width: 420px){
+        .head_main{
+            width: 90%;
+            margin: 30px auto;
+                h1{
+                    font-size: 40px;
+                }
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+        }
+        .add_li_main{
+            margin: 50px auto 10px auto;
+                form{
+                    display: block;
+                    justify-content: center;
+                    text-align: center;
+                }
+                input{
+                    font-size: 20px;
+                    padding: 0;
+                    width: 80%;
+                }
+                button{
+                    font-size: 20px;
+                    width: 80%;
+                    padding: 0;
+                    margin-top: 20px;
+                }
+        }
+        .list_main{
+            width: 90%;
+                .custom-width{
+                    width: 70%;
+                    font-size: 15px;
+                }
+                .li_text{
+                    font-size: 15px;
+                }
+                .custom-checkbox{
+                    bottom: 4px;
+                    width: 15px;
+                }
+                button{
+                    width: 25px;
+                    height: 25px;
+                }
+                .info{
+                    .w3{
+                        font-size: 15px;
+                    }
+                    .w4{
+                        font-size: 15px;
+                    }
+                    .w5{
+                        font-size: 15px;
+                    }
+                }
+        }
+    }
+    @media (max-width: 420px){
+        body{
+            min-height: 56rem;
+        }
+    }

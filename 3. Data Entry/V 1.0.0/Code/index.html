@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tittle -->
+    <title>Data Entry</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="Style.css">
+    <!-- Fonts -->
+        <!-- Fira Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- Noto Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Full content -->
+    <div class="fl_cont">
+        <!-- Front / Main Content -->
+        <div id="front_main">
+            <div class="front_cont" >
+                <!-- Header part -->
+                <h1>Luminate Co. Ltd - Employee Datebase</h1>
+                <!-- Button Part -->
+                <div class="front_cont_btn">
+                    <h2>Induct a new team member</h2>
+                    <button type="button" onclick="showEnrollSection(event)">Enroll</button>
+                </div>
+                        <!-- Table Part -->
+                    <div class="t_p">
+                        <table>
+                            <!-- Table Heading -->
+                            <thead>
+                                <tr>
+                                    <th class="th_1">File Number</th>
+                                    <th class="th_2">Full Name</th>
+                                    <th class="th_3">Contact Number</th>
+                                    <th class="th_4">Email</th>
+                                    <th class="th_5">Salary</th>
+                                    <th class="th_6">Joining Date</th>
+                                    <th class="th_7 w1">Update</th>
+                                    <th class="th_8 w2">Wipe</th>
+                                    <th class="th_9 w3">Terminate</th>
+                                </tr>
+                            </thead>
+                            <!-- Table/Employee date/list -->
+                            <tbody id="show-employee-info">
+                                <!-- List -->
+                                <!-- <tr>
+                                    <td class="td_1">9,99,999</td>
+                                    <td class="td_2">Mohammad Rakibul Hassan chowdhuri</td>
+                                    <td class="td_3">+8801684565240</td>
+                                    <td class="td_4">mdrh96.11@gmail.com</td>
+                                    <td class="td_5">99,99,999</td>
+                                    <td class="td_6">3rd-September-23</td>
+                                    <td class="td_btn">
+                                        <button class="td_btn_m" type="button" onclick="editBtn()">
+                                            <i class="fa-sharp fa-solid fa-pen-to-square"></i>
+                                        </button>
+                                    </td>
+                                    <td class="td_btn">
+                                        <button class="td_btn_m" type="button" onclick="editBtn()">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </td>
+                                    <td class="td_btn">
+                                        <button class="td_btn_m" type="button" onclick="resignBtn()">
+                                            <i class="fa-solid fa-user-xmark"></i>
+                                        </button>
+                                    </td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </div>
+        <!-- Enroll content -->
+        <div class="enroll-cont" id="enroll-form" style="display: none;">
+            <form>
+                <!-- Form = Input Submit -->
+                <div>
+                    <label class="en_ed" for="input-file-num">File Number</label>
+                    <input type="number" id="input-file-num" placeholder="e.g. 000001">
+                </div>
+                <div>
+                    <label class="en_ed" for="input-name">Full Name</label>
+                    <input type="text" id="input-name" placeholder="e.g. MD Rakibul Hassan">
+                </div>
+                <div>
+                    <label class="en_ed" for="input-number">Contact Number</label>
+                    <input type="text" id="input-number" placeholder="e.g. +88-016-8456-5240">
+                </div>
+                <div>
+                    <label class="en_ed" for="input-email">Email</label>
+                    <input type="text" id="input-email" placeholder="e.g. mdrh96.11@gmail.com">
+                </div>
+                <div>
+                    <label class="en_ed" for="input-salary">Salary</label>
+                    <input type="text" id="input-salary" placeholder="e.g. 90,000">
+                </div>
+                <div>
+                    <label class="en_ed" for="input-date">Joining Date</label>
+                    <input type="text" id="input-date" placeholder="e.g. 4th-September-23">
+                </div>
+                <!-- Form = Input Submit Button -->
+                <div class="submit-button-section">
+                    <button class="en_ed_btn" type="button" onclick="cancelEnrollSection(event)">Discontinue</button>
+                    <button class="en_ed_btn" type="button" onclick="addNewEmployee(event)">Enroll</button>
+                </div>
+            </form>
+        </div>
+        <!-- Edit Enroll content -->
+        <div class="enroll-cont" id="edit-enroll-form" style="display: none;">
+            <form>
+                <!-- Form = Input Submit -->
+                <div>
+                    <label class="en_ed" for="edit-input-file-num">File Number</label>
+                    <input type="number" id="edit-input-file-num" placeholder="e.g. 000001">
+                </div>
+                <div>
+                    <label class="en_ed" for="edit-input-name">Full Name</label>
+                    <input type="text" id="edit-input-name" placeholder="e.g. MD Rakibul Hassan">
+                </div>
+                <div>
+                    <label class="en_ed" for="edit-input-number">Contact Number</label>
+                    <input type="text" id="edit-input-number" placeholder="e.g. +88-016-8456-5240">
+                </div>
+                <div>
+                    <label class="en_ed" for="edit-input-email">Email</label>
+                    <input type="text" id="edit-input-email" placeholder="e.g. mdrh96.11@gmail.com">
+                </div>
+                <div>
+                    <label class="en_ed" for="edit-input-salary">Salary</label>
+                    <input type="text" id="edit-input-salary" placeholder="e.g. 90,000">
+                </div>
+                <div>
+                    <label class="en_ed" for="edit-input-date">Joining Date</label>
+                    <input type="text" id="edit-input-date" placeholder="e.g. 4th-September-23">
+                </div>
+                <!-- Form = Input Submit Button -->
+                <div class="submit-button-section">
+                    <button class="en_ed_btn" type="button" onclick="editCancelEnrollSection(event)">Discontinue</button>
+                    <button class="en_ed_btn" type="button" onclick="renewEmployee(event)">Renew</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="myScript.js"></script>
+</body>
+</html>
